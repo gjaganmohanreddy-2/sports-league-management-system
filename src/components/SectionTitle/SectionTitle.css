@@ -1,0 +1,16 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  font-weight: 750;
+  color: #172554;
+}
+
+.section-title p {
+  margin-top: 10px;
+  color: #64748b;
+  font-size: 16px;
+}

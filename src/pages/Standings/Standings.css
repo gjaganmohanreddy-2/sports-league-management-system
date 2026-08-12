@@ -1,0 +1,43 @@
+.standings-page {
+  min-height: 80vh;
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.standings-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.standings-table th,
+.standings-table td {
+  padding: 17px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.standings-table th {
+  background: #172554;
+  color: white;
+}
+
+.standings-table td {
+  color: #475569;
+}
+
+.standings-table .team-name {
+  text-align: left;
+  color: #172554;
+  font-weight: 700;
+}
+
+.standings-table .points {
+  color: #2563eb;
+  font-weight: 800;
+}

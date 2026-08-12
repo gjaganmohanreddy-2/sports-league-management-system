@@ -1,0 +1,496 @@
+/* =================================
+   STATISTICS SECTION
+================================= */
+
+.statistics-section {
+    position: relative;
+
+    padding: 100px 70px;
+
+    background: #102a43;
+
+    overflow: hidden;
+}
+
+
+/* =================================
+   DECORATIVE CIRCLES
+================================= */
+
+.statistics-circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.07);
+}
+
+
+.statistics-circle-one {
+    width: 420px;
+
+    height: 420px;
+
+    top: -210px;
+
+    right: -100px;
+
+    animation:
+        statisticsFloat 7s ease-in-out infinite;
+}
+
+
+.statistics-circle-two {
+    width: 280px;
+
+    height: 280px;
+
+    bottom: -170px;
+
+    left: -100px;
+
+    animation:
+        statisticsFloat 9s ease-in-out infinite reverse;
+}
+
+
+@keyframes statisticsFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(-18px)
+            rotate(8deg);
+    }
+
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.statistics-heading {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 750px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.statistics-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #90caf9;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.statistics-label span {
+    width: 25px;
+
+    height: 2px;
+
+    background: #90caf9;
+}
+
+
+.statistics-heading h2 {
+    margin: 15px 0;
+
+    color: #ffffff;
+
+    font-size: clamp(34px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+
+.statistics-heading h2 span {
+    color: #90caf9;
+}
+
+
+.statistics-heading p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #b7c9d9;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   GRID
+================================= */
+
+.statistics-grid {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+.statistics-card {
+    position: relative;
+
+    min-height: 225px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.1);
+
+    border-radius: 17px;
+
+    backdrop-filter: blur(8px);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.statistics-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 110px;
+
+    height: 110px;
+
+    top: -55px;
+
+    right: -55px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(144, 202, 249, 0.08);
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.statistics-card:hover {
+    transform:
+        translateY(-12px);
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    border-color:
+        rgba(144, 202, 249, 0.3);
+
+    box-shadow:
+        0 20px 45px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+.statistics-card:hover::before {
+    transform:
+        scale(2);
+}
+
+
+/* =================================
+   ICON
+================================= */
+
+.statistics-icon {
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 16px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(144, 202, 249, 0.12);
+
+    color: #90caf9;
+
+    font-size: 20px;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease;
+}
+
+
+.statistics-card:hover .statistics-icon {
+    transform:
+        rotate(8deg)
+        scale(1.08);
+
+    background:
+        rgba(144, 202, 249, 0.2);
+}
+
+
+/* =================================
+   NUMBER
+================================= */
+
+.statistics-card h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 34px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+/* =================================
+   TITLE
+================================= */
+
+.statistics-card strong {
+    margin-top: 9px;
+
+    color: #90caf9;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+.statistics-card p {
+    max-width: 150px;
+
+    margin: 8px 0 0;
+
+    color: #8fa9bf;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   ARROW
+================================= */
+
+.statistics-arrow {
+    position: absolute;
+
+    right: 16px;
+
+    bottom: 15px;
+
+    width: 25px;
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.07);
+
+    color: #90caf9;
+
+    font-size: 9px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.statistics-card:hover .statistics-arrow {
+    transform:
+        translateX(5px);
+
+    background:
+        rgba(144, 202, 249, 0.15);
+}
+
+
+/* =================================
+   CARD ENTRY ANIMATION
+================================= */
+
+.statistics-card {
+    animation:
+        statisticsEntry 0.7s ease both;
+}
+
+
+.statistics-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+
+.statistics-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+.statistics-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+.statistics-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+
+.statistics-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+
+@keyframes statisticsEntry {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1150px) {
+
+    .statistics-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .statistics-section {
+        padding: 80px 40px;
+    }
+
+
+    .statistics-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .statistics-section {
+        padding: 65px 25px;
+    }
+
+
+    .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .statistics-card {
+        min-height: 205px;
+    }
+
+}

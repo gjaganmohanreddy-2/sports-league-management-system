@@ -1,0 +1,49 @@
+.players-page {
+  min-height: 80vh;
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.player-card {
+  padding: 30px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.player-avatar {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 28px;
+}
+
+.player-card h4 {
+  color: #172554;
+  font-weight: 700;
+}
+
+.player-card p {
+  color: #2563eb;
+}
+
+.player-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.player-info span {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 12px;
+}

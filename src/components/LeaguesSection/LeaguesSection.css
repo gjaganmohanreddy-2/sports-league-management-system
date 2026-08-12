@@ -1,0 +1,613 @@
+/* =================================
+   LEAGUES SECTION
+================================= */
+
+.leagues-section {
+    position: relative;
+
+    padding: 95px 70px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.leagues-heading {
+    max-width: 1400px;
+
+    margin: 0 auto 45px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+}
+
+
+.league-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #795548;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.league-label span {
+    width: 25px;
+
+    height: 2px;
+
+    background: #1565c0;
+}
+
+
+.leagues-heading h2 {
+    margin: 14px 0;
+
+    color: #102a43;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+
+.leagues-heading h2 span {
+    color: #1565c0;
+}
+
+
+.leagues-heading p {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: #829ab1;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   VIEW BUTTON
+================================= */
+
+.leagues-view-btn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 19px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1565c0;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.leagues-view-btn:hover {
+    background: #0d47a1;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 22px rgba(21, 101, 192, 0.22);
+}
+
+
+.leagues-view-btn svg {
+    transition: transform 0.3s ease;
+}
+
+
+.leagues-view-btn:hover svg {
+    transform: translateX(5px);
+}
+
+
+/* =================================
+   GRID
+================================= */
+
+.leagues-grid {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+.league-card {
+    position: relative;
+
+    min-height: 355px;
+
+    padding: 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    background: #f7f9fb;
+
+    border: 1px solid #e5ebf0;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.league-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 170px;
+
+    height: 170px;
+
+    top: -90px;
+
+    right: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(21, 101, 192, 0.07);
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.league-card:hover {
+    transform: translateY(-10px);
+
+    border-color:
+        rgba(21, 101, 192, 0.2);
+
+    box-shadow:
+        0 22px 45px
+        rgba(16, 42, 67, 0.11);
+}
+
+
+.league-card:hover::before {
+    transform: scale(1.7);
+}
+
+
+/* =================================
+   TOP
+================================= */
+
+.league-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.league-icon {
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(21, 101, 192, 0.09);
+
+    color: #1565c0;
+
+    font-size: 24px;
+
+    transition: all 0.4s ease;
+}
+
+
+.league-card:hover .league-icon {
+    color: #ffffff;
+
+    background: #1565c0;
+
+    transform:
+        rotate(-8deg)
+        scale(1.08);
+}
+
+
+.league-star {
+    color: #d6c2ba;
+
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+}
+
+
+.league-card:hover .league-star {
+    color: #795548;
+
+    transform:
+        rotate(20deg)
+        scale(1.2);
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.league-content {
+    flex: 1;
+
+    margin-top: 30px;
+}
+
+
+.league-sport {
+    color: #795548;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+}
+
+
+.league-content h3 {
+    max-width: 300px;
+
+    margin: 10px 0 14px;
+
+    color: #243b53;
+
+    font-size: 21px;
+
+    line-height: 1.35;
+}
+
+
+.league-season {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #829ab1;
+
+    font-size: 13px;
+}
+
+
+.league-season svg {
+    color: #1565c0;
+}
+
+
+/* =================================
+   DETAILS
+================================= */
+
+.league-details {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 0;
+
+    border-top: 1px solid #e7edf2;
+
+    border-bottom: 1px solid #e7edf2;
+}
+
+
+.league-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.league-detail > svg {
+    color: #1565c0;
+
+    font-size: 15px;
+}
+
+
+.league-detail div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.league-detail span {
+    color: #9fb3c8;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.league-detail strong {
+    color: #243b53;
+
+    font-size: 12px;
+}
+
+
+/* =================================
+   STATUS
+================================= */
+
+.league-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #edf7ef;
+
+    color: #388e3c;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+.status-dot {
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #43a047;
+
+    animation:
+        statusPulse 1.5s infinite;
+}
+
+
+@keyframes statusPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(67, 160, 71, 0.4);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 7px rgba(67, 160, 71, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(67, 160, 71, 0);
+    }
+
+}
+
+
+/* =================================
+   BUTTON
+================================= */
+
+.league-button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #1565c0;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.league-button svg {
+    transition:
+        transform 0.3s ease;
+}
+
+
+.league-card:hover .league-button svg {
+    transform:
+        translateX(6px);
+}
+
+
+/* =================================
+   NUMBER
+================================= */
+
+.league-number {
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 16px;
+
+    color: #dce5ec;
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    pointer-events: none;
+}
+
+
+/* =================================
+   ENTRY ANIMATION
+================================= */
+
+.league-card {
+    animation:
+        leagueEntry 0.7s ease both;
+}
+
+
+.league-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+
+.league-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+
+.league-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes leagueEntry {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .leagues-section {
+        padding: 75px 40px;
+    }
+
+    .leagues-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .leagues-section {
+        padding: 60px 25px;
+    }
+
+    .leagues-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .leagues-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

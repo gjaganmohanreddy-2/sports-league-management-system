@@ -1,0 +1,310 @@
+.sports-page {
+    min-height: 80vh;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+
+/* ============================= */
+/* Header */
+/* ============================= */
+
+.sports-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.sports-header h1 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    font-size: 36px;
+}
+
+.sports-header p {
+    color: #6b4f35;
+    font-size: 17px;
+}
+
+
+/* ============================= */
+/* Add Sport Form */
+/* ============================= */
+
+.sport-form-container {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    padding: 30px;
+    background-color: #f8fafc;
+    border: 1px solid #ddd6ce;
+    border-radius: 12px;
+}
+
+.sport-form-container h2 {
+    margin-bottom: 25px;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+.sport-form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 20px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #6b4f35;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px 12px;
+    box-sizing: border-box;
+    border: 1px solid #cfc7bf;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #1e3a8a;
+}
+
+
+/* ============================= */
+/* Form Buttons */
+/* ============================= */
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.add-sport-button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-sport-button:hover {
+    background-color: #6b4f35;
+}
+
+.cancel-sport-button {
+    padding: 11px 20px;
+    border: 1px solid #6b4f35;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #6b4f35;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cancel-sport-button:hover {
+    background-color: #6b4f35;
+    color: #ffffff;
+}
+
+
+/* ============================= */
+/* Sports List */
+/* ============================= */
+
+.sports-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sports-list > h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #1e3a8a;
+}
+
+.sports-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* ============================= */
+/* Sport Card */
+/* ============================= */
+
+.sport-card {
+    padding: 25px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd6ce;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sport-card:hover {
+    transform: translateY(-5px);
+}
+
+.sport-card h3 {
+    margin-bottom: 12px;
+    color: #1e3a8a;
+    font-size: 21px;
+}
+
+.sport-card p {
+    min-height: 45px;
+    margin-bottom: 15px;
+    color: #6b4f35;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* Sport Card Buttons */
+/* ============================= */
+
+.sport-card-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edit-sport-button {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-sport-button:hover {
+    background-color: #6b4f35;
+}
+
+.delete-sport-button {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6b4f35;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-sport-button:hover {
+    background-color: #1e3a8a;
+}
+
+
+/* ============================= */
+/* Messages */
+/* ============================= */
+
+.sports-message {
+    text-align: center;
+    margin: 30px 0;
+    color: #6b4f35;
+    font-size: 16px;
+}
+
+.sports-error {
+    text-align: center;
+    margin: 30px 0;
+    color: #b91c1c;
+    font-size: 16px;
+}
+
+
+/* ============================= */
+/* Tablet */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .sport-form-container form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-buttons {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .add-sport-button,
+    .cancel-sport-button {
+        flex: 1;
+    }
+
+    .sports-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .sports-page {
+        padding: 25px;
+    }
+
+    .sports-header h1 {
+        font-size: 30px;
+    }
+
+    .sports-header p {
+        font-size: 15px;
+    }
+
+    .sport-form-container {
+        padding: 20px;
+    }
+
+    .sport-form-container form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-buttons {
+        grid-column: auto;
+        flex-direction: column;
+    }
+
+    .sports-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-card-buttons {
+        flex-direction: column;
+    }
+
+    .edit-sport-button,
+    .delete-sport-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,623 @@
+/* =================================
+   TEAMS SECTION
+================================= */
+
+.teams-section {
+    position: relative;
+
+    padding: 95px 70px;
+
+    background: #f5f7fa;
+
+    overflow: hidden;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.teams-heading {
+    max-width: 1400px;
+
+    margin: 0 auto 45px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+}
+
+
+.teams-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #795548;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.teams-label span {
+    width: 25px;
+
+    height: 2px;
+
+    background: #1565c0;
+}
+
+
+.teams-heading h2 {
+    margin: 14px 0;
+
+    color: #102a43;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+
+.teams-heading h2 span {
+    color: #1565c0;
+}
+
+
+.teams-heading p {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: #829ab1;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   VIEW BUTTON
+================================= */
+
+.teams-view-btn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 19px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #795548;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.teams-view-btn:hover {
+    background: #5d4037;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(121, 85, 72, 0.22);
+}
+
+
+.teams-view-btn svg {
+    transition: transform 0.3s ease;
+}
+
+
+.teams-view-btn:hover svg {
+    transform: translateX(5px);
+}
+
+
+/* =================================
+   GRID
+================================= */
+
+.teams-grid {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =================================
+   TEAM CARD
+================================= */
+
+.team-card {
+    position: relative;
+
+    min-height: 390px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8ed;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.team-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 150px;
+
+    top: -80px;
+
+    right: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(21, 101, 192, 0.06);
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.team-card:hover {
+    transform: translateY(-10px);
+
+    border-color:
+        rgba(21, 101, 192, 0.2);
+
+    box-shadow:
+        0 22px 45px
+        rgba(16, 42, 67, 0.1);
+}
+
+
+.team-card:hover::before {
+    transform: scale(1.8);
+}
+
+
+/* =================================
+   CARD HEADER
+================================= */
+
+.team-card-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.team-logo {
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: rgba(21, 101, 192, 0.09);
+
+    color: #1565c0;
+
+    font-size: 24px;
+
+    transition: all 0.4s ease;
+}
+
+
+.team-card:hover .team-logo {
+    background: #1565c0;
+
+    color: #ffffff;
+
+    transform:
+        rotate(8deg)
+        scale(1.08);
+}
+
+
+/* =================================
+   RANK
+================================= */
+
+.team-rank {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #795548;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+.team-rank svg {
+    font-size: 14px;
+}
+
+
+/* =================================
+   TEAM CONTENT
+================================= */
+
+.team-content {
+    flex: 1;
+
+    margin-top: 27px;
+}
+
+
+.team-sport {
+    color: #795548;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+}
+
+
+.team-content h3 {
+    margin: 9px 0 7px;
+
+    color: #243b53;
+
+    font-size: 21px;
+}
+
+
+.team-content p {
+    margin: 0;
+
+    color: #829ab1;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   STATS
+================================= */
+
+.team-stats {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 17px 0;
+
+    border-top: 1px solid #eef2f6;
+
+    border-bottom: 1px solid #eef2f6;
+}
+
+
+.team-stat {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.team-stat strong {
+    color: #243b53;
+
+    font-size: 17px;
+}
+
+
+.team-stat span {
+    color: #9fb3c8;
+
+    font-size: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+}
+
+
+.stat-divider {
+    width: 1px;
+
+    height: 28px;
+
+    background: #e6edf2;
+}
+
+
+/* =================================
+   PROGRESS
+================================= */
+
+.team-progress {
+    margin-top: 17px;
+}
+
+
+.progress-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+}
+
+
+.progress-header span {
+    color: #829ab1;
+
+    font-size: 10px;
+}
+
+
+.progress-header strong {
+    color: #1565c0;
+
+    font-size: 10px;
+}
+
+
+.progress-track {
+    width: 100%;
+
+    height: 5px;
+
+    border-radius: 10px;
+
+    background: #e9eef2;
+
+    overflow: hidden;
+}
+
+
+.progress-bar {
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: #1565c0;
+
+    animation:
+        progressEntry 1.2s ease;
+}
+
+
+@keyframes progressEntry {
+
+    from {
+        width: 0;
+    }
+
+}
+
+
+/* =================================
+   BUTTON
+================================= */
+
+.team-button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #1565c0;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.team-button svg {
+    transition:
+        transform 0.3s ease;
+}
+
+
+.team-card:hover .team-button svg {
+    transform:
+        translateX(6px);
+}
+
+
+/* =================================
+   NUMBER
+================================= */
+
+.team-number {
+    position: absolute;
+
+    right: 18px;
+
+    bottom: 13px;
+
+    color: #e1e8ed;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    pointer-events: none;
+}
+
+
+/* =================================
+   ENTRY ANIMATION
+================================= */
+
+.team-card {
+    animation:
+        teamEntry 0.7s ease both;
+}
+
+
+.team-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+
+.team-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+.team-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+.team-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes teamEntry {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1150px) {
+
+    .teams-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .teams-section {
+        padding: 75px 40px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .teams-section {
+        padding: 60px 25px;
+    }
+
+
+    .teams-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .teams-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

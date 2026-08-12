@@ -1,0 +1,441 @@
+/* =================================
+   SPORTS SECTION
+================================= */
+
+.sports-section {
+    position: relative;
+
+    padding: 90px 70px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.sports-heading {
+    max-width: 1400px;
+
+    margin: 0 auto 45px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.sports-heading-text {
+    max-width: 650px;
+}
+
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #795548;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.section-label span {
+    width: 25px;
+    height: 2px;
+
+    background: #1565c0;
+
+    display: inline-block;
+}
+
+
+.sports-heading h2 {
+    margin: 14px 0;
+
+    color: #102a43;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+
+.sports-heading h2 span {
+    color: #1565c0;
+}
+
+
+.sports-heading p {
+    margin: 0;
+
+    color: #829ab1;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   VIEW ALL BUTTON
+================================= */
+
+.view-all-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 18px;
+
+    border: 1px solid #d9e2ec;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #1565c0;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.view-all-btn span {
+    font-size: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.view-all-btn:hover {
+    color: #ffffff;
+
+    background: #1565c0;
+
+    border-color: #1565c0;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(21, 101, 192, 0.2);
+}
+
+
+.view-all-btn:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =================================
+   SPORTS GRID
+================================= */
+
+.sports-grid {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =================================
+   SPORT CARD
+================================= */
+
+.sport-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #e6edf3;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* Top blue line */
+
+.sport-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 4px;
+
+    background: #1565c0;
+
+    transition: width 0.4s ease;
+}
+
+
+.sport-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(21, 101, 192, 0.2);
+
+    box-shadow: 0 20px 40px rgba(16, 42, 67, 0.1);
+}
+
+
+.sport-card:hover::before {
+    width: 100%;
+}
+
+
+/* =================================
+   CARD TOP
+================================= */
+
+.sport-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.sport-card-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(21, 101, 192, 0.08);
+
+    color: #1565c0;
+
+    font-size: 27px;
+
+    transition: all 0.4s ease;
+}
+
+
+.sport-card:hover .sport-card-icon {
+    color: #ffffff;
+
+    background: #795548;
+
+    transform:
+        rotate(-8deg)
+        scale(1.1);
+}
+
+
+.sport-number {
+    color: #d9e2ec;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+/* =================================
+   CARD CONTENT
+================================= */
+
+.sport-card-content {
+    flex: 1;
+
+    margin-top: 35px;
+}
+
+
+.sport-card-content h3 {
+    margin: 0 0 12px;
+
+    color: #243b53;
+
+    font-size: 22px;
+}
+
+
+.sport-card-content p {
+    margin: 0;
+
+    color: #829ab1;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   CARD FOOTER
+================================= */
+
+.sport-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eef2f6;
+}
+
+
+.sport-card-footer span {
+    color: #795548;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.sport-arrow {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f5f7fa;
+
+    color: #1565c0;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.sport-card:hover .sport-arrow {
+    color: #ffffff;
+
+    background: #1565c0;
+
+    transform: translateX(4px);
+}
+
+
+/* =================================
+   CARD ENTRY ANIMATION
+================================= */
+
+.sport-card {
+    animation: sportCardEntry 0.7s ease both;
+}
+
+
+.sport-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.sport-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.sport-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.sport-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes sportCardEntry {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+
+    .sports-section {
+        padding: 75px 40px;
+    }
+
+    .sports-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .sports-section {
+        padding: 60px 25px;
+    }
+
+    .sports-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .sports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-card {
+        min-height: 270px;
+    }
+}
